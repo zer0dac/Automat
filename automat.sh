@@ -6,5 +6,8 @@ read -p "ip for block (ex: 192.168.3):  " ip
 read -p "which command do you want to do for all  ips?:  " cmnd
 for i in {0..255}
 do
+        echo " "
+        echo ${cmnd} "${ip}.${i}"
         ${cmnd} "${ip}.${i}"
 done
+
